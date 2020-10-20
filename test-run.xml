@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Expedia Cucumber Testing" verbose="0" parallel="tests" thread-count="1">
+    <listeners>
+        <listener class-name="listeners.TestListener"></listener>
+    </listeners>
+    <test name="Test scenarios" preserve-order="true">
+        <classes>
+            <class name="runner.TestRunnerCucumber"/>
+        </classes>
+    </test>
+</suite>
